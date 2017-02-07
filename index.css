@@ -13,18 +13,28 @@ div
     border-radius: 12px;
     border-width: 3px;
     border-style: solid;
-    border-color: rgba(90, 30, 80, 0.45);	
+    border-color: rgba(90, 30, 80, 0.45);
+    box-shadow: 7px 5px 12px 3px rgba(50,80,200,0.4)
 }
 
 h1
 {
 	text-align: center;
 }
-p>img 
+p img
 {
 	margin: 4px 0px 0px 5px;
-    width: 100px;
-	max-height: 30%
+    max-width: 80%;
+	max-height: 90%;
+	vertical-align: bottom
+	}
+	
+div>img
+	{
+	margin: 14px 0px 14px 14px;
+    max-width: 50%;
+	max-height: 60%;
+	vertical-align: bottom
 	}
 	
 span>img 
@@ -39,20 +49,33 @@ span>img
 width: 20%;
 height: 40%;
 display: inline-block;	
-vertical-align: top;
+vertical-align:middle;
 text-align:center;
 margin: 10px 10px;
+box-sizing: border-box;
 }
 
-div p:nth-of-type(3)
+
+#txt
 {
 color: red;
-text-align:right;	
+margin-top:85px;
+
 }
 
 .column
 {
-	
+	margin-bottom: 35px;
+	column-count: 2;
+	column-gap: 1px;
+	width:200 px;
+	box-sizing: border-box;
+}	
+
+blockquote
+{
+	display:inline-block;
+	margin-left: 79px;
 }
 
 #string:checked ~ .column {   
